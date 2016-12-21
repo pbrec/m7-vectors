@@ -34,6 +34,36 @@ MarbleGame <- function (x){
 
 # Bonus: Play the marble game until you win, keeping track of how many tries you take
 
+not.won<-T
+count<-0
+while(not.won){
+  
+  p<-MarbleGame("green")
+  count <- count+1
+  if(p){
+    not.won <- F
+  }
+}
+count
+
 
 ## Double bonus(answer not provided): play the game 1000X (until you win) and track the average number of tries
 # Is it what you expected based on the probability
+
+when.won<-seq(1,1000)
+
+for(i in 1:1000){
+not.won<-T
+count<-0
+  while(not.won){
+  
+    p<-MarbleGame("green")
+    count <- count+1
+    if(p){
+      not.won <- F
+    }
+  }
+when.won[i] <- count
+}
+
+mean(when.won)
