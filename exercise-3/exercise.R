@@ -35,7 +35,5 @@ MarbleGame <- function (x){
 # Bonus: Play the marble game until you win, keeping track of how many tries you take
 
 
-MarbleGame("green")
-
 ## Double bonus(answer not provided): play the game 1000X (until you win) and track the average number of tries
 # Is it what you expected based on the probability
